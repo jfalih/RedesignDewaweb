@@ -455,6 +455,12 @@ header{
     }
     .menu{
         display: none;
+    }    
+    .benefit-item{
+        padding:20px;
+        text-align: justify;
+        width: 280px;
+        border-radius: 10px;
     }
     .pc-none{
         display: block;
