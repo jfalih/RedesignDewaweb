@@ -1,0 +1,95 @@
+.list-price{
+    display: flex;
+    width: 100%;
+}
+.price{
+    padding:20px;
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+}
+.price-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+}
+.price-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.price-storage{
+    font-size: 28px;
+    font-weight: bold;
+}
+.price-pricing{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.price-period{
+    font-size: 14px;
+    font-weight: bold;
+}
+.price-item{
+    flex:none;
+    width: 300px;
+}
+.price-item ul li{
+    padding:20px;
+}
+.price-item ul{
+    list-style-type: none;
+}
+.price-item ul li:nth-child(odd){
+    background-color: var(--dark-primary);
+    color:#fff;
+}
+.price-item.best{
+    position: relative;
+    border:1px solid #c73800;
+    border-radius: 10px;
+    color:#fff;
+    background-color: var(--secondary);
+}
+.price-item.best::before{
+    content:'Best Package';
+    padding:5px 10px;
+    background-color: #c73800;
+    position: absolute;
+    left: -30px;
+    font-size: 14px;
+    top:20px;
+    border-radius: 5px;
+}
+.price-item.best ul li:nth-child(odd){
+    background-color: #c73800;
+}
+
+.contact-support{
+    display: flex;
+    align-items: center;
+}
+.contact-action{
+    margin-left: auto;
+}
+.features{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:1000px) {
+    .contact-support{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-action{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 20px;
+    }
+}

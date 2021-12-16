@@ -1,0 +1,121 @@
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bg-illustration{
+    background-position: center;
+    background-size: cover;
+    background-image: url('./../images/bg-illustration.jpg');
+}
+.border-bottom-left-30{
+    border-bottom-left-radius: 150px;
+}
+.pt-30{
+    padding-top: 10rem !important;
+}
+.container{
+    padding:3rem;
+}
+.about{
+    background-color: #fcfcfc;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-section{
+    font-size: 38px;
+}
+.align-items-center{
+    align-items: center;
+}
+.ml-5{
+    margin-left: 5px;
+}
+.mr-15{
+    margin-right: 15px;
+}
+.ml-20{
+    margin-left:20px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.col-lg-4{
+    position: relative;
+    padding:3rem;
+    width: calc(100%/12  * 4);
+}
+.col-lg-5{
+    padding:3rem;
+    width: calc(100%/12  * 5);
+}
+.col-lg-7{
+    padding:3rem;
+    width: calc(100%/12  * 7);
+}
+.col-lg-8{
+    position: relative;
+    padding:3rem;
+    width: calc(100%/12  * 8);
+}
+.col-lg-6{
+    padding:3rem;
+    width: calc(100%/12  * 6);
+}
+.col-lg-12{
+    flex-wrap: wrap;
+    padding:3rem;
+    width: calc(100%/12  * 12);
+}
+.bg-secondary{
+    background-color: var(--secondary);
+}
+.bg-primary{
+    background-color: var(--primary);
+}
+.bg-success{
+    background-color: var(--success);
+}
+.bg-danger{
+    background-color: var(--danger);
+}
+.bg-primary-10{
+    background-color: #F9FEFF;
+}
+.text-white{
+    color:#fff;
+}
+.bg-illustration-dark{
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ), url('./../images/bg-illustration.jpg');
+}
+@media only screen and (max-width:1000px){
+    .col-md-12{
+        flex-wrap: wrap;
+        padding:2rem;
+        width: calc(100%/12  * 12);
+    }    
+    .bg-illustration{
+        background-position: center;
+        background-size: cover;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)
+        ), url('./../images/bg-illustration.jpg');
+    }
+}
+@media only screen and (max-width:500px){
+    .col-md-12{
+        flex-wrap: wrap;
+        padding:2rem;
+        width: calc(100%/12  * 12);
+    }    
+}

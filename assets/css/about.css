@@ -1,0 +1,125 @@
+.hero-about{
+    text-align: center;
+    background-color: #fcfcfc;
+}
+.hero-gallery{
+    text-align: center;
+    background-color: #fcfcfc;
+}
+.teams{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+}
+.list-teams{
+    display: flex;
+}
+.teams-items{
+    position: relative;
+}
+.teams-items::before{
+    position: absolute;
+    content:'';
+    top:0;
+    width: 300px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.8);
+}
+.teams-items img{
+    width: 300px;
+    margin-right: 20px;
+    object-fit: cover;
+    height: 500px;
+}
+.milestone{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+}
+.milestone-item::before{
+    content: '';
+    width: 30px;
+    left:-75px;
+    background-color: var(--primary);
+    height: 30px;
+    border-radius: 25px;
+    position: absolute;
+}
+.milestone-item{
+    flex: none;
+    position: relative;
+    display: flex;
+    margin-right: 100px;
+    height: 240px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.milestone-year{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.milestone-year::before{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left:-30px;
+    width: 100px;
+    height: 20px;
+    background-color:#d1eff3;
+}
+.list-month{
+    display: flex;
+}
+.milestone-month{
+    height: 100px;
+    max-width: 200px;
+    margin:20px;
+}
+.month-title{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.list-vision{
+    display: flex;
+}
+.card-vision{
+    padding:20px;
+    width: 300px;
+    margin:10px;
+}
+.vision-header{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.vision-icon{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.vision-title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:1000px){
+    .card-vision{
+        width: 100%;
+    }
+    .list-vision{
+        display: flex;
+        flex-direction: column;
+    }
+}
