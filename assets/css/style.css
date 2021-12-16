@@ -52,7 +52,7 @@ header{
 }
 .benefit-item{
     padding:20px;
-    text-align: justify;
+    text-align:left;
     width: 400px;
     border-radius: 10px;
 }
