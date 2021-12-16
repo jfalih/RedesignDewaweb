@@ -1,12 +1,55 @@
 .list-price{
     display: flex;
     width: 100%;
+    position: relative;
 }
 .price{
     padding:20px;
     display: flex;
     overflow-x: auto;
     width: 100%;
+}
+.price::-webkit-scrollbar {
+    width: 20px;
+}
+.price::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+}
+.price::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+.price-button-left{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    border:none;
+    z-index: 2;
+    top:250px;
+    cursor: pointer;
+    color:#fff;
+    font-size: 20px;
+    background-color: rgba(83, 192, 255, 0.5);
+}
+.price-button-right{
+    width: 50px;
+    height: 50px;
+    right: 0;
+    border-radius: 25px;
+    position: absolute;
+    border:none;
+    z-index: 2;
+    top:250px;
+    cursor: pointer;
+    color:#fff;
+    font-size: 20px;
+    background-color: rgba(83, 192, 255, 0.5);
+}
+.price-button-left:hover{
+    background-color: var(--primary);
+}
+.price-button-right:hover{
+    background-color: var(--primary);
 }
 .price-header{
     display: flex;

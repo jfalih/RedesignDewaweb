@@ -230,7 +230,11 @@ header{
         background-color: var(--dark-primary);
         width: calc(100%/3);
     }
+    .promotion p{
+        font-size: 14px;
+    }
     .promotion-title{
+        font-size: 16px;
         margin-bottom: 20px;
     }
     .promotion:hover{
