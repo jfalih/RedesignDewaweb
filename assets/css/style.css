@@ -439,6 +439,10 @@ header{
         display: flex;
         width: 100%;
     }    
+    .promotion-banner{
+        padding:20px;
+        height: auto;
+    }
     .toggle-button{
         margin-left: auto;
         display: block;
