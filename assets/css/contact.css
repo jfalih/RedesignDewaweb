@@ -8,12 +8,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding:20px;
     width: 700px;
 }
 .form-group{
     margin:20px;
-    width:290px;
+    width:310px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;

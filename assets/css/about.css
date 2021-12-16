@@ -9,10 +9,54 @@
 .teams{
     display: flex;
     width: 100%;
+    padding:10px;
     overflow-x: auto;
 }
 .list-teams{
     display: flex;
+    position: relative;
+}
+.teams::-webkit-scrollbar {
+    width: 20px;
+}
+.teams::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+}
+.teams::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+.gallery-button-left{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    border:none;
+    z-index: 2;
+    top:250px;
+    cursor: pointer;
+    color:#fff;
+    font-size: 20px;
+    background-color: rgba(83, 192, 255, 0.5);
+}
+.gallery-button-right{
+    width: 50px;
+    height: 50px;
+    right: 0;
+    border-radius: 25px;
+    position: absolute;
+    border:none;
+    z-index: 2;
+    top:250px;
+    cursor: pointer;
+    color:#fff;
+    font-size: 20px;
+    background-color: rgba(83, 192, 255, 0.5);
+}
+.gallery-button-left:hover{
+    background-color: var(--primary);
+}
+.gallery-button-right:hover{
+    background-color: var(--primary);
 }
 .teams-items{
     position: relative;
@@ -31,10 +75,24 @@
     object-fit: cover;
     height: 500px;
 }
+.list-milestone{
+    position: relative;
+    width: 100%;
+}
 .milestone{
     display: flex;
     width: 100%;
     overflow-x: auto;
+}
+
+.milestone::-webkit-scrollbar {
+    width: 20px;
+}
+.milestone::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+}
+.milestone::-webkit-scrollbar-thumb {
+    background: #ccc;
 }
 .milestone-item::before{
     content: '';
@@ -54,6 +112,40 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.milestone-button-left{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    border:none;
+    z-index: 2;
+    top:85px;
+    cursor: pointer;
+    color:#fff;
+    font-size: 20px;
+    background-color: rgba(83, 192, 255, 0.5);
+}
+.milestone-button-right{
+    width: 50px;
+    height: 50px;
+    right: 0;
+    border-radius: 25px;
+    position: absolute;
+    border:none;
+    z-index: 2;
+    top:85px;
+    cursor: pointer;
+    color:#fff;
+    font-size: 20px;
+    background-color: rgba(83, 192, 255, 0.5);
+}
+.milestone-button-left:hover{
+    background-color: var(--primary);
+}
+.milestone-button-right:hover{
+    background-color: var(--primary);
 }
 .milestone-year{
     position: relative;
