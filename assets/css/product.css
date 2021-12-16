@@ -92,4 +92,7 @@
         display: flex;
         margin-top: 20px;
     }
+    .text-align-center-mobile{
+        text-align: center;
+    }
 }
